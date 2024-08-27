@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Header';
+import MainContent from './components/MainContent';
+import Reviews from './components/Reviews'; 
+import Deals from './components/Deals';
+import Service from './components/Service';
+import Footer from './components/Footer';
+import Tyres from './components/Tyres';
+import ScrollButtons from './components/ScrollBtn';
+import Payment from './components/Payment';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <>
+         <Navbar/>
+        <div className='container w-100'>
+        <div className='card mt-2'>
+            <MainContent />
+            <Reviews />
+        </div>
+        <div className='card mt-4 mb-4'>
+            <Deals/>
+        </div>
+            <Service/>
+             <Tyres/>
+             <Payment/>
+        </div>
+             <ScrollButtons/>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;

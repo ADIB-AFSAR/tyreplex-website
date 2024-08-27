@@ -1,38 +1,399 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
+}
+.imgheight {
+  height: 50% !important;
+}
+li {
+  list-style: none !important;
+}
+.carousel-container {
+  position: relative;
+  width: 35%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scroll-wrapper {
   display: flex;
-  flex-direction: column;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Webkit browsers */
+}
+
+.carousel-items {
+  display: flex;
+}
+
+.carousel-item {
+  min-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid red;
+  background-color: lightgray;
+}
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+/* Dropdown on Hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .dropdown:hover > .nav-link {
+  border-bottom: 1px solid red;
+}
+
+a.nav-link.dropdown-toggle::after {
+  display: none;
+}
+button.navbar-toggler.collapsed {
+  position: relative !important;
+  left: 20% !important;
+}
+
+.sm {
+  font-size: 0.8rem;
+}
+.heading {
+  font-family: "Roboto", Arial, sans-serif;
+}
+.deal-container {
+  height: 10rem;
+  display: flex;
   align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.deal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.deal-body {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  width: 168px;
+  height: 85px;
+  background-image: url("https://cdn.tyreplex.net/themes/moonlight/images/make_logo_sprite@2x.png?v=2300&tr=q-60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 73%;
+  margin-bottom: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-card:hover {
+  transform: scale(1.1);
+}
+
+.deal-body:first-child {
+  margin-left: 1rem;
+}
+.deal-name {
+  display: flex;
+  height: 100%;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 0rem;
+}
+
+.ser-img {
+  background-image: url(../public/assets/mechanic-tools-png_5176973.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 45rem 0rem;
+}
+.modal-90w {
+  max-width: 45vw;
+}
+
+.horizontal-scroll {
+  overflow: hidden;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  scroll-snap-align: center;
+  margin-right: 10px;
+}
+
+.modal-image.active {
+  border: 2px solid #007bff;
+}
+.card-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Ensure the card is positioned correctly */
+  position: relative;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px); /* Slightly lift the card */
+}
+
+.question {
+  background-color: #ffeaaa;
+}
+.info {
+  background-color: white;
+}
+.info-p {
+  padding: 0;
+  margin: 0;
+}
+.card-img-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.card-img {
+  width: 180%;
+  height: auto;
+  position: relative;
+  right: 15%;
+  top: 3rem;
+}
+
+.card-body-custom {
+  width: 50%;
+}
+
+.card-container {
+  position: relative;
+  height: 200px;
+}
+.tyre:hover {
+  transform: scale(1.1);
+}
+
+.deal-heading {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.btn-close {
+  position: absolute;
+  right: 1%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.highlight:hover {
+  color: #000 !important;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #000, 0 0 80px #000,
+    0 0 120px #000, 0 0 160px #000 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Container for rolling tyre */
+.tyre-container {
+  transform: translateY(-50%); /* Center vertically */
+  width: 50px;
+  height: 50px;
+}
+
+/* Continuous rotation animation */
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg); /* Complete one full rotation */
   }
+}
+
+/*rotation animation to the tyre */
+.rolling-tyre {
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+  margin-left: 1.2rem;
+  animation: rotate 2s linear infinite;
+}
+
+.scroll-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: white; /* Default background color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Transparent background when scrolled */
+.navbar.transparent {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ) !important; /* Adjust transparency */
+}
+
+/* Ensure the rest of the content does not overlap */
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+.modal {
+  z-index: 1050; /* Bootstrap's default z-index for modals */
+}
+.logo-0 {
+  background-position: 1rem -73rem;
+}
+.logo-1 {
+  background-size: 72%;
+  background-position: 1rem -21rem;
+}
+.logo-2 {
+  background-size: 74%;
+  background-position: 1rem -5.4rem;
+}
+.logo-3 {
+  background-size: 74%;
+  background-position: 1rem 1rem;
+}
+.logo-4 {
+  background-size: 88%;
+  background-position: 1rem -3.3rem;
+}
+.logo-5 {
+  background-size: 80%;
+  background-position: 1rem -46rem;
+}
+.logo-6 {
+  background-size: 74%;
+  background-position: 1rem -70.4rem;
+}
+.logo-7 {
+  background-size: 74%;
+  background-position: 1rem -86.8rem;
+}
+.logo-8 {
+  background-size: 74%;
+  background-position: 1rem -110.1rem;
+}
+.logo-9 {
+  background-size: 74%;
+  background-position: 1rem -96.9rem;
+}
+.logo-10 {
+  background-size: 74%;
+  background-position: 1rem -5.4rem;
+}
+.logo-11 {
+  background-size: 84%;
+  background-position: 1rem -40.3rem;
+}
+.logo-12 {
+  background-size: 74%;
+  background-position: 1rem -90.4rem;
+}
+.logo-13 {
+  background-size: 74%;
+  background-position: 1rem -54.4rem;
+}
+.logo-14 {
+  background-size: 42%;
+  background-position: 3rem -33.6rem;
+}
+.logo-15 {
+  background-size: 75%;
+  background-position: 1rem -32.9rem;
+}
+.logo-16 {
+  background-size: 77%;
+  background-position: 1rem -30.7rem;
+}
+.logo-17 {
+  background-size: 74%;
+  background-position: 1rem -93.7rem;
+}
+.logo-18 {
+  background-size: 75%;
+  background-position: 1rem -107.5rem;
+}
+.logo-19 {
+  background-size: 74%;
+  background-position: 1rem -17.4rem;
+}
+.logo-20 {
+  background-size: 74%;
+  background-position: 1rem -46.4rem;
+}
+.logo-21 {
+  background-size: 74%;
+  background-position: 1rem -66.4rem;
+}
+.logo-22 {
+  background-size: 74%;
+  background-position: 1rem -50.4rem;
+}
+.logo-23 {
+  background-size: 70%;
+  background-position: 1rem -77.8rem;
+}
+.logo-24 {
+  background-size: 74%;
+  background-position: 1rem -164.2rem;
+}
+.logo-25 {
+  background-size: 78%;
+  background-position: 1rem -177rem;
+}
+.logo-26 {
+  background-size: 78%;
+  background-position: 1rem -229.5rem;
+}
+.logo-27 {
+  background-size: 78%;
+  background-position: 1rem -139.5rem;
 }

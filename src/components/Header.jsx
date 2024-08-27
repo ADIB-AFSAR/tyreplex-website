@@ -64,14 +64,14 @@ function Navbar() {
                             </a>
                             <ul className="dropdown-menu mt-1">
                                 <p className='text mx-2 sm'>Popular car tyre brand</p>
-                                <li><a className="dropdown-item" href="/">MRF Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">CEAT Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Goodyear Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Apollo Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Bridgestone Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">JK Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Michelin Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">All Car Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/mrf">MRF Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/ceat">CEAT Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/goodyear">Goodyear Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/apollo">Apollo Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/bridgestone">Bridgestone Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/jk">JK Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres/michelin">Michelin Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/car-tyres">All Car Tyres</a></li>
                             </ul>
                         </li>
                         
@@ -88,14 +88,14 @@ function Navbar() {
                             </a>
                             <ul className="dropdown-menu mt-1">
                                 <p className='text mx-2 sm'>Popular bike tyre brand</p>
-                                <li><a className="dropdown-item" href="/">MRF Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">CEAT Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Goodyear Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Apollo Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Bridgestone Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">JK Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Michelin Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">All Car Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/mrf">MRF Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/ceat">CEAT Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/goodyear">Goodyear Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/apollo">Apollo Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/bridgestone">Bridgestone Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/jk">JK Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres/michelin">Michelin Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/bike-tyres">All Bike Tyres</a></li>
                             </ul>
                         </li>
                         
@@ -103,7 +103,7 @@ function Navbar() {
                         <li className="nav-item dropdown">
                             <a 
                                 className="nav-link dropdown-toggle" 
-                                href="/" 
+                                href="https://www.tyreplex.com/tyre-pressure" 
                                 role="button" 
                                 data-bs-toggle="dropdown" 
                                 aria-expanded="false"
@@ -124,7 +124,7 @@ function Navbar() {
                                 Commercial Tyres
                             </a>
                             <ul className="dropdown-menu mt-1">
-                                <li><a className="dropdown-item" href="/">All Commercial Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/commercial-tyres">All Commercial Tyres</a></li>
                             </ul>
                         </li>
                         
@@ -140,9 +140,9 @@ function Navbar() {
                                 Accessories
                             </a>
                             <ul className="dropdown-menu mt-1">
-                                <li><a className="dropdown-item" href="/">Accessories</a></li>
-                                <li><a className="dropdown-item" href="/">Batteries</a></li>
-                                <li><a className="dropdown-item" href="/">Alloy wheels</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/accessories">Accessories</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/batteries">Batteries</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/alloy">Alloy wheels</a></li>
                             </ul>
                         </li>
                         
@@ -158,12 +158,12 @@ function Navbar() {
                                 More
                             </a>
                             <ul className="dropdown-menu mt-1">
-                                <li><a className="dropdown-item" href="/">CashBack Offer</a></li>
-                                <li><a className="dropdown-item" href="/">Find Tyre Dealers</a></li>
-                                <li><a className="dropdown-item" href="/">Compare Tyres</a></li>
-                                <li><a className="dropdown-item" href="/">Are you a Tyre Dealer</a></li>
-                                <li><a className="dropdown-item" href="/">Wheel balancing</a></li>
-                                <li><a className="dropdown-item" href="/">Wheel Alignment</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/offers-terms-conditions">CashBack Offer</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/tyre-dealers-in-india">Find Tyre Dealers</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/compare-tyres">Compare Tyres</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/dealer-details">Are you a Tyre Dealer</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/wheel-balancing">Wheel balancing</a></li>
+                                <li><a className="dropdown-item" href="https://www.tyreplex.com/wheel-alignment">Wheel Alignment</a></li>
                             </ul>
                         </li>
                     </ul>

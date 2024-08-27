@@ -45,21 +45,21 @@ function Footer() {
 
           {/* Links to company information */}
           <div className='col-2 '>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/about-us'>Who we are?</a></p>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/dealer-details'>Are you a Tyre Dealer?</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/about-us'  >Who we are?</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/dealer-details'>Are you a Tyre Dealer?</a></p>
           </div>
 
           {/* Links to legal information */}
           <div className='col-2'>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/privacy-policy'>Privacy policy</a></p>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/terms-of-use'>Terms of use</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/privacy-policy'>Privacy policy</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/terms-of-use'>Terms of use</a></p>
           </div>
 
           {/* Contact information */}
           <div className='col-3'>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/contact'>Contact Us</a></p>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/career'>Career</a></p>
-            <p className='info-p'><a className='text-secondary text-decoration-none' href='https//www.tyreplex.com/shipping-return-policy'>Shipping & Return Policy</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/contact'>Contact Us</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/career'>Career</a></p>
+            <p className='info-p'><a className='text-secondary text-decoration-none' href='https://www.tyreplex.com/shipping-return-policy'>Shipping & Return Policy</a></p>
           </div>
         </div>
 

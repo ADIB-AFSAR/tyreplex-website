@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Tyre Plex web
+### Link - https://tyreplex-dusky.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This website is a feature-rich platform designed to enhance user experience with modern UI/UX improvements like sticky and transparent navigation bars, animated scroll buttons, and more. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Sticky & Transparent Navbar
+- The navigation bar remains fixed at the top of the page while scrolling, and it turns transparent to provide a cleaner look as users browse through the content.
 
-### `npm start`
+### 2. Animated Scroll Buttons
+- The scroll bar is customized to enhance the browsing experience, making it visually appealing and functional.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Image Animations
+- Images on the site feature relative animations to create a dynamic and engaging visual experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. 3D Tile & Card Effects
+- The cards and tiles on the site feature 3D effects to provide a more interactive and immersive experience.
 
-### `npm test`
+## Folder Structure
+The project follows a modular folder structure to maintain clean and manageable code:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **/public/assets**: Stores all static images and assets.
+- **/src/components**: Contains all React components.
+- **/src/data**: Stores data fetching files like `dealItems.js` and `tireItems.js`.
+- **/src/styles**: Global CSS and other styling files. 
 
-### `npm run build`
+## How to Deploy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deploying to Vercel
+1. **Install Vercel CLI**: `npm install -g vercel`
+2. **Login to Vercel**: `vercel login`
+3. **Deploy**: Run `vercel` in the project root directory. Vercel will guide you through the process of selecting the project and setting up your deployment.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Enhancements
+The project can be enhanced with further customizations such as:
+- Additional animations and transitions for smoother user interaction.
+- Enhanced SEO features for better discoverability.
+- Integration with a backend for dynamic data management.
